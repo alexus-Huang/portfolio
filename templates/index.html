@@ -11,8 +11,8 @@
         <p>Hi! I'm Alexus</p>
     </div>
     <div id="buttons">
-        <button class="button">My resume</button>
-        <a href="https://github.com/alexus-Huang" target="_blank"><button class="button">My Github</button></a>
+        <button class="intro-button">My resume</button>
+        <a href="https://github.com/alexus-Huang" target="_blank"><button class="intro-button">My Github</button></a>
         
     </div>
     <div id="skills">
@@ -20,6 +20,7 @@
         <p>CSS</p>
         <p>Python</p>
         <p>RISC-V Assembly</p>
+        <p>JS</p>
     </div>
     <div id="about-me">
         <h2 id="AboutMe-title">About Me</h2>
@@ -28,30 +29,60 @@
             <div id="projects-completed"></div>
         </div>
     </div>
+
+    <!-- Projects -->
     <div id="projects">
         <h1 id="project-title">Projects</h1>
         <div class="individual-project-banner">
-            <h1 class="project-title">AI Application</h1>
-            <div id="languages-used">
-                <p>Python</p>
-                <p>HTML</p>
-                <p>CSS</p>
+            <div class="project-content">
+                <div class="bannerTitle">
+                    <h1 class="project-title">AI Application</h1>
+                </div>
+                <div class="languages-used">
+                    <p>Python</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <p class="project-description">This project is a web application that uses AI to help students study more efficiently. Users can input notes and generate summaries, quizzes, and flashcards.</p>
+                <a href="https://github.com/alexus-Huang/ai_study_guide_app" target="_blank" class="button">View Github</a>
             </div>
-            <p class="project-description">This project is a web application that uses AI to help students study more efficiently. Users can input notes and generate summaries, quizzes, and flashcards.</p>
-            <a href=""><button>View Github</button></a>
-            <img src="" alt="">
+            
+            <img src="/static/imgs/ai_app_img.png" alt="Image showing AI Study Guide APP UI">
         </div>
+
+
         <div class="individual-project-banner">
-            <h1 class="project-title">LAHVIII Project</h1>
-            <p class="project-description">A project that was built at LAHVIII</p>
-            <a href=""><button>View Github</button></a>
-            <img src="" alt="">
+            <div class="project-content">
+                <div class="bannerTitle">
+                    <h1 class="project-title">LAHVIII</h1>
+                </div>
+                <div class="languages-used">
+                    <p>JS</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <p class="project-description">A project that was built at LAHVIII</p>
+                <a href="https://github.com/alexus-Huang/LAHVIII-project" target="_blank" class="button">View Github</a>
+            </div>
+            
+            <img src="/static/imgs/LAHVIII-img.jpg" alt="Image showing the main page of the random name generator">
         </div>
+
+
         <div class="individual-project-banner">
-            <h1 class="project-title">Taoyuan Aiport Pictures</h1>
-            <p class="project-description">A personal project which holds a majority of the pictures that I personally took when I visited Taipei Taoyuan International Airport during my summer break after my sophmore year</p>
-            <a href=""><button>View Github</button></a>
-            <img src="" alt="">
+            <div class="project-content">
+                <div class="bannerTitle">
+                    <h1 class="project-title">Taoyuan Airport Pictures</h1>
+                </div>
+                <div class="languages-used">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <p class="project-description">A personal project which holds a majority of the pictures that I personally took when I visited Taipei Taoyuan International Airport during my summer break after my sophmore year.</p>
+                <a href="https://github.com/alexus-Huang/Taoyuan-Airport-Pictures" target="_blank" class="button">View Github</a>
+            </div>
+            
+            <img src="/static/imgs/taoyuanprojeft.jpg" alt="Image showing the main page of Taoyuan Aiport Pictures website">
         </div>
     </div>
 {% endblock %}

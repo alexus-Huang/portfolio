@@ -39,6 +39,17 @@ h1{
 
 
 /* Button Styling */
+.intro-button{
+    margin: 20px;
+    border-color: #FB7758;
+    border-style: solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px 10px 20px;
+}
+.intro-button:hover{
+    background-color: #FB7750;
+}
 #buttons{
     display: flex;
     flex-direction: row;
@@ -47,18 +58,21 @@ h1{
     padding:10px;
     margin: none;
 }
-.button{
+.button {
+    display: inline-block;   /* important for <a> */
     margin: 20px;
-    border-color: #FB7758;
-    border-style: solid;
+    border: none;
+    border-bottom: 1px solid #FB7750;
     color: white;
     background-color: transparent;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
+    text-decoration: none; 
+    width:23%;
+    transition: color 0.3s ease;
 }
-.button:hover{
-    background-color: #FB7750;
+.button:hover {
+    color:#FB7760;
 }
-
 
 /* Skills styling */
 #skills{
@@ -86,6 +100,7 @@ h1{
     font-size: 3vh;
     margin-top: 1%;
     text-align: center;
+    width: 50%;
 }
 #AboutMe-title{
     margin-top: 3%;
@@ -98,23 +113,74 @@ h1{
     flex-direction: column;
     margin-top: 5%;
 }
-.individual-project-banner{
+#projects a{
+    text-decoration: none;
+}
+#projects a:hover{
+    text-decoration: none;
+}
+#project-title{
+    font: 600;
+}
+.individual-project-banner {
+    display: flex;          /* Enables Flexbox */
+    align-items: center;    /* Vertically centers text and image */
+    justify-content: space-between; /* Pushes text to left, image to right */
+    width: 95%;           
+    margin: 3% auto; 
+    gap: 20px;              /* Adds space between the text and the image */
+}
+
+.project-content {
     width: 50%;
-    margin-left: 1%;
-    padding: 2%;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.individual-project-banner img {
+    width:50%;
+    max-width: 70%;
+    height:20%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.individual-project-banner p{
     text-align: center;
 }
-#languages-used{
+.bannerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 5%;
+}
+.bannerTitle h1{
+    margin: 0;
+}
+.languages-used{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:5%;
+    width: 100%;
 }
-#languages-used p{
-    margin-bottom: 5%;
-    background-color: green;
+.languages-used p{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background-color: rgba(128, 128, 128, 0.3); /* 0.5 = 50% transparent */
     border-radius: 5%;
     padding: 1%;
-    width: 10%;
+    width: 25%;
+}
+#projects button{
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FB7750;
+    color: white;
+    transition: color 0.3s ease;
+
 }
