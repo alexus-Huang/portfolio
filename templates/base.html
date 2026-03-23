@@ -6,9 +6,11 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    {% block extra_css %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light dark-background">
+  <nav class="navbar navbar-expand-lg navbar-light dark-background right">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,15 +20,14 @@
           <a class="nav-link" href="{{ url_for('homePage')}}" id="portfolio-page">Portfolio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('aboutPage')}}" id="about-page">About</a>
+          <a class="nav-link" href="#" id="about-page">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('otherProjectsPage')}}" id="about-page">Projects</a>
+          <a class="nav-link" href="#" id="about-page">Projects</a>
         </li>
       </ul>
     </div>
 </nav>
-    <h1>Alexus Huang</h1>
     {% block content %}
     {% endblock %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
